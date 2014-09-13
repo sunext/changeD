@@ -20,6 +20,12 @@
 /* Number of timer ticks since OS booted. */
 static int64_t ticks;
 
+/*
+This is a new list that stores all the sleeping trea
+ */
+struct list sleep_list;
+
+
 /* Number of loops per timer tick.
    Initialized by timer_calibrate(). */
 static unsigned loops_per_tick;
